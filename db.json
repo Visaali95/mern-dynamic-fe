@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id":1,
+            "name": "test-1",
+            "age": 10,
+            "salary": 1000,
+            "isUnemployed": false,
+            "email":"test.1@yopmail.com",
+            "phone":9876543210
+        },
+        {
+            "id":2,
+            "name": "test-2",
+            "age": 20,
+            "salary": 1000,
+            "isUnemployed": false,
+            "email":"test.2@yopmail.com",
+            "phone":9876543211
+        }
+    ]
+}
