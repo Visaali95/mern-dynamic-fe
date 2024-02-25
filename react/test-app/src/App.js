@@ -1,8 +1,24 @@
 
 import React from 'react';
-class FirstApp extends React.Component {
+import './App.css';
+import Number from './Number';
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 }
+  }
+  onClick(e) {
+    this.setState(prevState => ({
+      count: prevState.count + 1
+    }));
+  }
   render() {
-    return <h2>This is my first Assignment</h2>;
+    return (
+      <div>
+        <Number number={this.state.count} />
+        <button onClick={this.onClick.bind(this)}>Count</button>
+      </div>
+    )
   }
 }
-export default FirstApp;
+export default App;
